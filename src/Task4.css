@@ -1,0 +1,53 @@
+.body {
+    background-color: #4f8a8b
+}
+
+.ordered  {
+    list-style: square inside url("/examples/images/bullet.png");
+    background: #9ddfef;
+    margin:0px 30%  0px 30%
+}
+.ordered li {
+    background: #ededed;        
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.unordered{
+    list-style: none;
+    counter-reset: item;
+    margin:0px 30%  0px 30%
+
+  }
+ .unordered li {
+    counter-increment: item;
+    margin-bottom: 5px;
+  }
+ .unordered  li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: lightblue;
+    border-radius: 100%;
+    color: white;
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .body h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 40px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+
+
+  .body h2 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center; }
+
+
+  .body p { color: #f8f8f8; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; text-align: center;}
+
+
+  .body a { color: #c8c8c8; text-decoration: underline; }
+
+
+  .body a:hover { color: #1c1c1c; text-decoration: underline; }
+
+  .body button {
+    margin: 0 30% 0 30%;
+}

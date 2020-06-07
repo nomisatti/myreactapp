@@ -1,27 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Lists from './Task2';
+import JSExpression from './Task3'
+import ApplyingCss from './Task4'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>Change made by <b>Muhammad Nouman Atiq</b></p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App({name}) {
+  return <div> 
+    <div> <h1>Task 1</h1>
+      <p>   Hello form <strong> {name}</strong></p>
+      <Lists heading="Task 2 (Display Items in Lists)"></Lists>
+      <JSExpression heading="Task 3 (JS Expression)" age='26'></JSExpression>
+      <ApplyingCss heading="Task 4 (Adding CSS)"></ApplyingCss>
     </div>
-  );
+    </div>
 }
 
 export default App;
